@@ -81,11 +81,20 @@ padding-left: 80%;
 	#signup
 	{
 		max-width: 50%;
+		max-height: 50%;
 		
 	}
 	.parallax1 h2{
 			font-size: 20px;
 			font-weight:bold;
+		 background-image: url("http://s1.picswalls.com/wallpapers/2015/09/20/2015-wallpaper_111525594_269.jpg");
+    min-height: 550px;
+ 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
 }
 
 }
