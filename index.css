@@ -92,9 +92,9 @@ padding-left: 80%;
 		 
  
 }
-.parallax1
+.parallax1,.parallax2,.parallax3
 	{
-    min-height: 250px;
+    min-height: 100px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
