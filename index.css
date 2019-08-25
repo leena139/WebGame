@@ -80,6 +80,30 @@ padding-left: 80%;
 	  
 	  
   }
+	.parallax1
+	{
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	.parallax2
+	{
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	.parallax3
+	{
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
 	#signup
 	{
 		max-width: 50%;
@@ -92,14 +116,7 @@ padding-left: 80%;
 		 
  
 }
-.parallax1,.parallax2,.parallax3
-	{
-    min-height: 100px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	}
+
 	.send_me
 	{
 		font-size: 15px;
