@@ -75,7 +75,7 @@ padding-left: 80%;
   }
   .topnav a.icon {
     float:right;
-	   display: inline-block;
+	display: inline-block;
     display: block;
 	  
 	  
@@ -94,9 +94,7 @@ padding-left: 80%;
 }
 .parallax1
 	{
-		background-image: url("http://s1.picswalls.com/wallpapers/2015/09/20/2015-wallpaper_111525594_269.jpg");
-    min-height: 700px;
- 
+    min-height: 250px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,11 +109,12 @@ padding-left: 80%;
 
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+	.topnav.responsive {position: relative;padding-left: 70%;}
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
+	  
   }
   .topnav.responsive a {
     float: none;
@@ -125,11 +124,14 @@ padding-left: 80%;
  
 }
 
-
+#story
+{
+	color:white;
+}
 /*Story*/
 .parallax1{
-    background-image: url("http://s1.picswalls.com/wallpapers/2015/09/20/2015-wallpaper_111525594_269.jpg");
-    min-height: 650px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5blRNdtmVqmen0q_FtQNWhL5493FsjlX_jQVk-tZqfehZkYU1");
+    min-height: 250px;
  
     background-attachment: fixed;
     background-position: center;
@@ -142,7 +144,37 @@ padding-left: 80%;
 	padding-left: 5%;
      padding-top: 10%;
 }
+.parallax2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBsqwHXZ_3-OZdgDDCMQFqzyeP4UZ5zJ_SStr5nPrCgN7RRJBIWw");
+    min-height: 250px;
+ 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+  text-align:justify;
+	text-justify: inter-word;
+	padding-right: 30%;
+	padding-left: 5%;
+    padding-top: 5%;
+}
 
+.parallax3{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNWGHgn0-FIh2q31iltU2f6_yW9qqQQX29JnmSrISdQC-JiQs");
+    min-height: 250px;
+ 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+  text-align:justify;
+	text-justify: inter-word;
+	padding-right: 30%;
+	padding-left: 5%;
+    padding-top: 5%;
+}
 /*Signup*/
 
 #signup
