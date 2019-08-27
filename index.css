@@ -103,7 +103,41 @@ a {
 .topnav .icon {
 	display: none;
 }
+/*For Mobile display*/
+@media screen and (max-width: 600px) {
+	
+	.topnav {
+		float: left;
+	}
+	.topnav a {
+		display: none;
+	}
+	.topnav a.icon {
+		float: right;
+		display: inline-block;
+	}
+	
 
+	.topnav.responsive {
+		position: relative;
+		padding-left: 70%;
+	}
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.send_me {
+		font-size: 15px;
+	}
+	
+	
+}
 
 .parallax1 {
 	
