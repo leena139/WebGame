@@ -1,14 +1,5 @@
 @charset "ISO-8859-1";
 
-
-
-
-
-
-
-
-
-
 html {
 	padding: 0;
 	margin: 0;
@@ -30,7 +21,14 @@ body {
 	overflow:auto;
 	
 }
-
+.title
+{
+	background-color: black;
+	height:60px;
+	font-size: 32px; 
+	padding-top: 10px;
+	padding-left: 10px;
+}
 .font {
 	font-family: 'Roboto Mono';
 	font-size: 32px;
@@ -89,34 +87,36 @@ a {
 
 .topnav {
 	display: inline-block;
-	text-align: right;
+	text-align: left;
 	position: fixed;
 	background-color: black;
 	overflow: hidden;
 	width: 100%;
 	left:0;
 	top:0;
+	height: 80px;
 	/*font-weight: bold;*/
 	/* padding-left: 60%; */
 /*  float: right;  */
 	}
 
-.topnav a {
+/*.topnav a
+{
 	display: inline-block;
 	padding-left: 80%;
 	padding: 14px 16px;
 	text-decoration: none;
-	color: white;
+	color: white;} */
 	/* font-size: 20px; */
 	/*text-align: right;*/
 	/*float: right;*/
-}
 
-/* Hide the link  */
+/* Hide the link  
 .topnav .icon {
 	display: none;
 }
- /*For Mobile display*/
+
+ For Mobile display
 @media screen and (max-width: 600px) {
 	
 	.topnav {
@@ -149,6 +149,7 @@ a {
 	 
 }
  
+*/
 @media screen and (max-width: 600px) {
 body{
 	 font-size:24px; 
@@ -176,25 +177,9 @@ width:50%;
 	}}
 	
 	
-}
 
-.parallax1 {
-	
-	 background-image: url("img/BG02.jpg");
-	background-repeat: no-repeat;
-   /*  background-size:100% 100%; */
-	
-	margin-top: -20px;
-	padding-top: 5%;
-	padding-right: 45%;
-	text-align: justify;
-	background-attachment: fixed; 
-	background-position: center;
-	background-size: cover; 
-	padding-left:3%;
-	
-	
-}
+
+
 .parallax2 {
  background-image: url("img/BG02.jpg"); 
 	background-repeat: no-repeat;
@@ -206,29 +191,12 @@ width:50%;
 	padding-top: 5%;
 	padding-right: 45%;
     background-attachment: fixed;
-	background-size: cover; 
 	padding-left:3%;
 	
 	
 }
 
-.parallax3 {
-	 background-image: url("img/BG03.jpg") ;
-	 background-repeat: no-repeat;
-	 background-attachment: absolute;
-  background-size: cover; 
-	 /* background-size:100% 100%; */
-	margin:0;
-	color: white;
-	text-align: justify;
-	  margin-top: -32px; 
-	padding-top: 5%;
-	padding-right: 45%; 
-	padding-left:3%;
-	
-	/*  padding-left: 3%;  */
-	
-}
+
 
 /*Signup*/
 #signup {
@@ -242,11 +210,7 @@ width:50%;
 	border-color:white;
 	border-width: medium;
 	
-	/* font-weight:bold; */
-	/*background: url("img/BG01.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;*/
-	/*  right: 60px; */
+	
 }
 .signup
 {
@@ -291,7 +255,7 @@ padding-left:8%;
 padding-right:8%;
 margin:0;
 text-align:left;
-
+margin-top: -32px;
 background-color: black;
 background-size: 100% 100%;
 height: 400px;
@@ -304,6 +268,7 @@ height: 400px;
 .padding_eight{
 	padding:8px;
 }
+
 
 
 
