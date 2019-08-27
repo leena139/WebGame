@@ -1,4 +1,4 @@
-   <!doctype html> 
+    <!doctype html> 
  <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"> -->
 <html lang="en">
 <head>
@@ -33,9 +33,25 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
 
 <title>1Earth</title>
+ <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
 
+function sendEmail(emailAddress){
+emailjs.init("user_D2ZI6qlke48zlWEMBlCsf");
+var template_params = {
+"reply_to": emailAddress,
+"from_name": emailAddress,
+"message_html": "Test"
+}
 
-  
+var service_id = "default_service";
+var template_id = "template_1rto4vYr";
+emailjs.send(service_id, template_id, template_params);
+
+}
+
+</script>
+
 
 
 
@@ -59,15 +75,24 @@
 
 <!-- Email Validation -->
 
-<script>
+<script type="text/javascript">
+
 
 function ValidateEmail(emailval)
 {
+	
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(emailval.value.match(mailformat))
+if(emailval.value.trim().match(mailformat))
 {
 document.sign.emailadd.focus();
+
+
+sendEmail(emailval.value.trim());
+alert("Thank you. You have been signed up for early access.");
+document.sign.emailadd.value="";
 return true;
+
+
 }
 else
 {
@@ -126,13 +151,13 @@ return false;
 		<div id="signup" >
 			<div class="signup">
 				<form name="sign" action="#">
-					<p>Sign up for early access</p>
+					<p class="margin_fix">Sign up for early access</p>
 
 					<small>Be the first to try the game</small> <br>
-					<br> <input placeholder="&nbsp;&nbsp;Email address"
+					<br> <input placeholder="Email address"
 						type="email" name='emailadd' required
 						style="border-bottom-color: White"> <a href="#"
-						onclick="ValidateEmail(document.sign.emailadd)" class="send_me">Sign
+						onclick="ValidateEmail(document.sign.emailadd)" class="send_me padding_eight">Sign
 						me up</a>
 
 				</form>
@@ -149,7 +174,7 @@ return false;
 	
 	<section id="story">
 
-		<div class="parallax1">
+		<div class="parallax2">
 
 
 			<p class="wrapper">The year is 2339 CE. Humans have been extinct
@@ -206,12 +231,11 @@ return false;
 <div class="contact">
 
 			<small>Join us at</small>
-			<p>
+			<p class="margin_fix">
 				Discord now
 				<!-- Link -->
-				<a
-					href="https://www.google.com/url?q=https://discord.gg/gufQAPc&sa=D&source=hangouts&ust=1566899877853000&usg=AFQjCNFaArSItnWTP3uhsOfmki0O9UqTXQ">
-					<img src="img/Discord-Logo-Color.svg" width="60px" height="60px"></img>
+				<a href="https://discord.gg/gufQAPc" class="z" >
+					<img src="img/Discord-Logo-Color.svg" width="60px" height="60px"/>
 				</a>
 			</p>
 			<small style="padding-bottom: 10%;">or email us at</small><br>mjgamestudio@mavjay.com<br>
