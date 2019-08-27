@@ -3,26 +3,32 @@
 html {
 	padding: 0;
 	margin: 0;
-	height: 100%;
-	box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+	/* box-sizing: border-box; */
 }
 
 body {
 	font-family: 'Roboto'; /* , sans-serif */
 	font-size: 32px; height : 100%;
-	background: url("img/BG01.jpg");
+	/* background: url("img/BG01.jpg"); */
 	color: white;
+	left:0;
+	margin:0;
 }
 
 .font {
 	font-family: 'Roboto Mono';
 	font-size: 32px;
 	padding-top:3%;
+	padding-left:5%;
 }
-
+#main
+{
+	background: url("img/MainBG.jpg"); 
+}
 /* Whole Screen */
 .wrapper {
-	background: url("img/BG01.jpg");
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -95,6 +101,7 @@ a {
 
 /*For Mobile display*/
 @media screen and (max-width: 600px) {
+	
 	.topnav {
 		float: left;
 	}
@@ -105,38 +112,8 @@ a {
 		float: right;
 		display: inline-block;
 	}
-	.parallax1 {
-		/* min-height: 100%; */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	.parallax2 {
-		/*min-height: 100%; */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	.parallax3 {
-		/*min-height: 100%;*/
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	#signup {
-		max-width: 50%;
-		max-height: 50%;
-	}
-	.parallax1 h2 {
-		/* font-size: 20px; */
-		/*font-weight:bold;*/
-	}
-	.send_me {
-		/* font-size: 15px; */
-	}
+	
+	
 
 	.topnav.responsive {
 		position: relative;
@@ -152,77 +129,107 @@ a {
 		display: block;
 		text-align: left;
 	}
+	.send_me {
+		/* font-size: 15px; */
+	}
+	
+	/* .parallax1 {
+		min-height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.parallax2 {
+		min-height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.parallax3 {
+		min-height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	} 
+	#signup {
+		max-width: 50%;
+		max-height: 50%;
+	}
+	.parallax1 h2 {
+		/* font-size: 20px; */
+		/*font-weight:bold;
+	}*/
 }
 
 
 /*Story*/
 
 .parallax1 {
-	background-image: url("img/BG02.jpg");
-	/* min-height: 550px;*/
-	
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: white;
-	text-align: justify;
-	margin-top: -15px;
-	text-justify: inter-word;
-	padding-right: 30%;
-	left:2%;
-	padding-top: 5%;
-}
+	 background-image: url("img/BG01.jpg");
 
-.parallax2 {
-	background-image: url("img/BG02.jpg");
-	/* min-height: 550px;*/
-	
-	background-attachment: fixed;
-	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size:100%;
+	text-align: justify;
+	margin-top: -20px;
+	padding-top: 5%;
+	padding-right: 45%;
+	
+	 background-attachment: fixed; 
+	background-position: center;
+	background-size: cover; 
+	padding-left:3%;
+	
+	
+}
+.parallax2 {
+ background-image: url("img/BG02.jpg"); 
+	background-repeat: no-repeat;
+	background-size:100%;
 	color: white;
 	text-align: justify;
-	margin-top: -15px;
-	text-justify: inter-word;
-	padding-right: 30%;
-	 padding-left: 3%; 
+	margin-top: -32px;
 	padding-top: 5%;
+	padding-right: 45%;
+    background-attachment: fixed;
+	background-size: cover; 
+	padding-left:3%;
+	
+	
+	
 }
 
 .parallax3 {
-	background-image: url("img/BG02.jpg");
-	/* min-height: 550px;*/
-	margin-top: -15px;
+	 background-image: url("img/BG03.jpg") ;
+	 background-repeat: no-repeat;
+	 background-attachment: absolute;
+  background-size: cover; 
+	background-size:100%;
 	color: white;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	text-align: justify;
-	text-justify: inter-word;
-	padding-right: 30%;
-	padding-left: 3%;
-	/*padding-top: 5%;*/
+	  margin-top: -32px; 
+	padding-top: 5%;
+	padding-right: 45%; 
+	padding-left:3%;
+	
+	/*  padding-left: 3%;  */
+	
 }
-
 
 /*Signup*/
 #signup {
 	width:500px;
-	
     position : fixed;
-	text-justify: inter-word;
-	/* text-align:center; */
 	font-size: 32px;
     line-height: 0.9em;
-  
-	padding-left: 65%;
+ 	padding-left: 60%;
 	padding-top:25%;
 	font-family: 'Roboto Mono';
 	border-color:white;
 	border-width: medium;
+	
 	/* font-weight:bold; */
 	/*background: url("img/BG01.jpg");
 	background-repeat: no-repeat;
@@ -231,14 +238,10 @@ a {
 }
 .signup
 {
-	border-right-style: groove; border-bottom-color: White; 
-	border-top-width: medium; border-left-style: groove;
-	 border-right-width: thick; border-left-color: White; 
-	 border-bottom-width: medium; border-top-color: White;
-	  border-bottom-style: groove; 
-	border-right-color: White;
-	 border-left-width: thick; 
-	border-top-style: groove; height: 190px;
+	border-style: groove;
+	 border-color: White; 
+	border-width: medium;
+	height: 190px;
 	padding:10px 10px 40px 20px;
 	
 }
@@ -258,26 +261,27 @@ a {
 .send_me:hover {
 	border: 5px solid white;
 }
-
-#contact {
-	background-color: black;
-	left:0;
-	top:0;
-	height: 400px;
-	padding-left: 8%;
-	padding-top:2%;
-	color:gray;
-	width: 100%;
-	
-    line-height: 0.7em;
-	margin: 0;
-
-}
 small
 {
 	font-size: 24px;
 	 
 }
+
+.contact
+{
+padding-top:10%;
+padding-left:8%;
+padding-right:8%;
+margin:0;
+text-align:left;
+width:100%;
+background-color: black;
+background-size: 100%;
+height: 400px;
+
+}
+
+
 
 
 
