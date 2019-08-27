@@ -2,6 +2,17 @@
 
 
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
 
 
 
@@ -38,15 +49,17 @@ body {
 }
  #main
 {
-	background: url("img/MainBG.jpg"); 
+	 background: url("img/MainBG.jpg");  
+	 background-size:cover;
 } 
 /* Whole Screen */
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	background-size:100% 100%;
+	/* background-size:100% 100%; */
 	 width:100%;
+	 
 	}
 
 span {
@@ -173,11 +186,13 @@ width:50%;
 	}}
 	
 	
+}
+
 .parallax1 {
 	
 	 background-image: url("img/BG02.jpg");
 	background-repeat: no-repeat;
-    background-size:100% 100%;
+   /*  background-size:100% 100%; */
 	
 	margin-top: -20px;
 	padding-top: 5%;
@@ -193,7 +208,8 @@ width:50%;
 .parallax2 {
  background-image: url("img/BG02.jpg"); 
 	background-repeat: no-repeat;
-	 background-size:100% 100%;
+	 background-size:cover;
+	
 	color: white;
 	text-align: justify;
 	margin-top: -32px;
@@ -211,7 +227,7 @@ width:50%;
 	 background-repeat: no-repeat;
 	 background-attachment: absolute;
   background-size: cover; 
-	 background-size:100% 100%;
+	 /* background-size:100% 100%; */
 	margin:0;
 	color: white;
 	text-align: justify;
@@ -286,6 +302,9 @@ background-size: 100% 100%;
 height: 400px;
 
 }
+
+
+
 
 
 
