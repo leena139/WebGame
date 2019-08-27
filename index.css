@@ -26,7 +26,7 @@ body {
 
 .font {
 	font-family: 'Roboto Mono';
-	font-size: 32px;
+	font-size: 56px;
 	padding-top:3%;
 	padding-left:5%;
 }
@@ -184,7 +184,7 @@ width:50%;
 	color: white;
 	text-align: justify;
 	margin-top: -32px;
-	padding-top: 5%;
+	padding-top: 8%;
 	padding-right: 45%;
     background-attachment: fixed;
 	padding-left:3%;
