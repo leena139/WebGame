@@ -15,14 +15,18 @@ body {
     height: 100%;
 	font-family: 'Roboto'; 
 	
-	font-size: 32px; 
-	 height : 100%;
+/*	font-size: 32px; 
+*/	 height : 100%;
 	color: white;
 	overflow:auto;
 	
 }
 
+.content{
 	
+	font-family: 'Comfortaa', cursive;
+
+}	
 
 .font {
 	font-family: 'Roboto Mono';
@@ -53,7 +57,7 @@ span {
 	font-weight: bold;
 }
 
-input[type=email] {
+/*input[type=email] {
 	background: transparent; border-top : transparent !important;
 	border-left : transparent !important; border-right : transparent
 	!important;
@@ -72,7 +76,32 @@ input[type=email] {
 input[type=email]:focus {
 	border-bottom: 4px solid white
 	!important;
+}*/
+
+
+input[type=email] {
+	background: transparent; border-top : transparent ;
+	border-left : transparent ;
+	border-right : transparent;
+	border-bottom: 1px solid ;
+	padding-left : 0;
+	outline: none;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom : 1px solid white;
+	padding-left: 0;
+	font-size: 24px;
+	width:250px;
+	color: white;
 }
+
+input[type=email]:focus {
+	border-bottom: 4px solid white;
+}
+
+
+
 
 a {
 	text-decoration: none;
@@ -96,99 +125,23 @@ a {
 	
 	}
 
-/*.topnav a
-{
-	display: inline-block;
-	padding-left: 80%;
-	padding: 14px 16px;
-	text-decoration: none;
-	color: white;} */
-	/* font-size: 20px; */
-	/*text-align: right;*/
-	/*float: right;*/
-
-/* Hide the link  
-.topnav .icon {
-	display: none;
-}
-
- For Mobile display
-@media screen and (max-width: 600px) {
-	
-	.topnav {
-		float: left;
-	}
-	.topnav a {
-		display: none;
-	}
-	.topnav a.icon {
-		float: right;
-		display: inline-block;
-	}
-	
-
-	.topnav.responsive {
-		position: relative;
-		padding-left: 70%;
-	}
-	.topnav.responsive a.icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	.topnav.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-	 
-	 
-}
- 
-*/
-@media screen and (max-width: 600px) {
-body{
-	 font-size:24px; 
-     } 
-	.signup
-	{
-	font-size:20px;
-line-height: 1.0em;
-width:50%;
-	}
-	.signup small
-	{
-	font-size:15px;
-	}
-	.signup a
-	{
-	font-size:15px;
-	
-	}
-	.signup input[type=email] 
-	{
-	font-size:15px;
-	border-bottom:transparent !important;
-	
-	}}
-	
-	
-
-
-
 .parallax2 {
  background-image: url("img/BG02.jpg"); 
 	background-repeat: no-repeat;
 	 background-size:cover;
-	
 	color: white;
 	text-align: justify;
-	margin-top: -32px;
-	padding-top: 8%;
+	
 	padding-right: 45%;
     background-attachment: fixed;
 	padding-left:3%;
+
+	font-family: 'Roboto Mono'; 
 	
+	font-size: 24px; 
+	 height : 100%;
+	color: white;
+	min-height: 100vh;	
 	
 }
 
@@ -196,27 +149,25 @@ width:50%;
 
 /*Signup*/
 #signup {
-/* 	width:500px; */
     position : fixed;
-	font-size: 32px;
-    line-height: 0.9em;
- 	padding-left: 60%;
-	padding-top:25%;
+	font-size: 24px;
+ 	/*top:50%;*/
+ 	left:60%;
+ 	right:3%;
+ 	bottom: 10%;
 	font-family: 'Roboto Mono';
 	border-color:white;
 	border-width: medium;
-	
-	
 }
+
 .signup
 {
 	border-style: groove;
 	 border-color: White; 
 	border-width: medium;
-	height: 190px;
+	height: 170px;
 	padding:24px ;
 	background-color:rgba(0,0,0,0.5);
-	
 }
 
  #signup a {
@@ -228,7 +179,7 @@ width:50%;
 	background-color:rgba(0,0,0,0.5);
 	font-size: 24px; 
 	border: 1px solid white;
-	padding:6px 6px 6px 6px;
+	padding:6px;
 	align-self: right;
 }
 
@@ -246,15 +197,17 @@ small
 }
 .contact
 {
-padding-top:10%;
-padding-left:8%;
+padding-top:5%;
+padding-left:4%;
 padding-right:8%;
 margin:0;
 text-align:left;
-margin-top: -32px;
+/*margin-top: -32px;*/
 background-color: black;
 background-size: 100% 100%;
-height: 400px;
+height: 300px;
+font-size: 24px;
+
 
 }
 .margin_fix{
@@ -267,6 +220,451 @@ height: 400px;
 
 
 
+
+/*.content{
+padding-top: 60px;
+
+padding: 8px;
+
+
+}*/
+
+.font_change{
+
+		font-family: 'Roboto'; 
+		font-size: 20px;
+}
+
+
+
+/* Mobile Phone */
+
+@media screen and (max-width: 600px) {
+body{
+	 font-size:24px; 
+     } 
+/*#signup{
+	visibility: hidden;
+
+}*/
+
+
+
+	.signup
+	{
+	font-size:20px;
+	line-height: 1.0em;
+width:100%!important;
+	}
+
+
+	.signup small
+	{
+	font-size:15px;
+	}
+
+	.signup a
+	{
+	font-size:15px;
+	
+	}
+
+	.signup input[type=email] 
+	{
+	font-size:15px;
+	border-bottom: 1px solid #e0e0e0;;
+	color:white;
+	
+	}
+
+.parallax2{
+
+	font-size: 18px;
+	padding: 5%;
+
+}
+::placeholder {
+  color: #e0e0e0;
+  opacity: 1; /* Firefox */
+}
+
+input[type=email] {
+	background: transparent; border-top : transparent ;
+	border-left : transparent ;
+	border-right : transparent;
+	border-bottom: 1px solid ;
+	padding-left : 0;
+	outline: none;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom : 1px solid white;
+	padding-left: 0;
+	font-size: 24px;
+	width:150px;
+	color: white;
+}
+.contact
+{
+	top:0;
+}
+
+}
+
+/* Tablet */
+
+ @media  (max-width: 900px) {
+body{
+	 font-size:24px; 
+     } 
+/* #signup{
+	visibility: hidden;
+
+} */
+
+.img
+{
+	width:  40px;
+	height: 40px;
+}
+
+	#signup {
+    position : fixed;
+	font-size: 24px;
+ 	/*top:50%;*/
+ 	left:60%;
+ 	right:3%;
+ 	bottom: 10%;
+	font-family: 'Roboto Mono';
+	border-color:white;
+	border-width: medium;
+}
+
+.signup
+{
+	border-style: groove;
+	 border-color: White; 
+	border-width: medium;
+	height: 130px;
+	padding:24px ;
+	background-color:rgba(0,0,0,0.5);
+}
+
+ #signup a {
+	align-items: right;
+}
+ 
+.send_me {
+	color: white;
+	background-color:rgba(0,0,0,0.5);
+	font-size: 24px; 
+	border: 1px solid white;
+	padding:6px;
+	align-self: right;
+}
+.margin_fix
+{
+	font-size:15px;
+}
+
+.send_me:hover {
+	border: 5px solid white;
+}
+small
+{
+	font-size: 20px;
+	 
+}
+.contact small
+{
+	padding-top: 10%;
+}
+	.signup a
+	{
+	font-size:10px;
+	
+	}
+
+	.signup input[type=email] 
+	{
+	font-size:15px;/* 15px */
+	border-bottom: 1px solid #e0e0e0;
+	color:white;
+	
+	}
+	
+.content
+{
+	padding-right: 45%;
+	
+	text-align: justify;
+}
+.parallax2{
+
+	font-size: 18px;
+	padding: 5%;
+	
+}
+
+::placeholder {
+  color: #e0e0e0;
+  opacity: 1; Firefox
+}
+
+input[type=email] {
+	background: transparent; border-top : transparent ;
+	border-left : transparent ;
+	border-right : transparent;
+	border-bottom: 1px solid ;
+	padding-left : 0;
+	outline: none;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom : 1px solid white;
+	padding-left: 0;
+	font-size: 24px;
+	width:100px;/* 150 */
+	color: white;
+}
+
+}
+
+
+/* landscape desktop -tablet*/
+
+
+  @media  (max-width: 768px) {
+  
+body{
+	 font-size:32px; 
+     } 
+/* #signup{
+	visibility: hidden;
+
+} */
+
+.img
+{
+	width:  40px;
+	height: 40px;
+}
+
+	#signup {
+    position : fixed;
+	font-size: 24px;
+ 	top:50%;
+ 	left:60%;
+ 	right:3%;
+ 	bottom: 10%;
+	font-family: 'Roboto Mono';
+	border-color:white;
+	border-width: medium;
+}
+
+.signup
+{
+	border-style: groove;
+	 border-color: White; 
+	border-width: medium;
+	height: 130px;
+	padding:24px ;
+	background-color:rgba(0,0,0,0.5);
+}
+
+ #signup a {
+	align-items: right;
+}
+ 
+.send_me {
+	color: white;
+	background-color:rgba(0,0,0,0.5);
+	font-size: 24px; 
+	border: 1px solid white;
+	padding:6px;
+	align-self: right;
+}
+.margin_fix
+{
+	font-size:15px;
+}
+
+.send_me:hover {
+	border: 5px solid white;
+}
+small
+{
+	font-size: 20px;
+	 
+}
+.contact small
+{
+	padding-top: 10%;
+}
+	.signup a
+	{
+	font-size:10px;
+	
+	}
+
+	.signup input[type=email] 
+	{
+	font-size:15px;
+	border-bottom: 1px solid #e0e0e0;/* 15px */
+	color:white;
+	
+	}
+	
+.content
+{
+	padding-right: 45%;
+	text-align: justify;
+}
+.parallax2{
+
+	font-size: 18px;
+	padding: 5%;
+	
+}
+
+::placeholder {
+  color: #e0e0e0;
+  opacity: 1; Firefox
+}
+
+input[type=email] {
+	background: transparent; border-top : transparent ;
+	border-left : transparent ;
+	border-right : transparent;
+	border-bottom: 1px solid ;
+	padding-left : 0;
+	outline: none;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom : 1px solid white;
+	padding-left: 0;
+	font-size: 24px;
+	width:150px;/* 150 */
+	color: white;
+}
+
+}
+ 
+ /* ipad pro Laptop */
+
+ @media  (max-width: 1200px) {
+body{
+	 font-size:24px; 
+     } 
+/* #signup{
+	visibility: hidden;
+
+} */
+
+
+	#signup {
+    position : fixed;
+	font-size: 24px;
+ 	/*top:50%;*/
+ 	left:60%;
+ 	right:3%;
+ 	bottom: 10%;
+	font-family: 'Roboto Mono';
+	border-color:white;
+	border-width: medium;
+}
+
+.signup
+{
+	border-style: groove;
+	 border-color: White; 
+	border-width: medium;
+	height: 140px;
+	width:200px;
+	padding:24px ;
+	background-color:rgba(0,0,0,0.5);
+}
+
+ #signup a {
+	align-items: right;
+}
+ 
+.send_me {
+	color: white;
+	background-color:rgba(0,0,0,0.5);
+	font-size: 24px; 
+	border: 1px solid white;
+	padding:6px;
+	align-self: right;
+}
+.margin_fix
+{
+	font-size:15px;
+}
+
+.send_me:hover {
+	border: 5px solid white;
+}
+small
+{
+	font-size: 20px;
+	 
+}
+.contact small
+{
+	padding-top: 10%;
+}
+	.signup a
+	{
+	font-size:10px;
+	
+	}
+
+	.signup input[type=email] 
+	{
+	font-size:15px;/* 15px */
+	border-bottom: 1px solid #e0e0e0;
+	color:white;
+	
+	}
+	
+.content
+{
+	padding-right: 45%;
+	
+	text-align: justify;
+}
+.parallax2{
+
+	font-size: 18px;
+	padding: 5%;
+	
+}
+
+::placeholder {
+  color: #e0e0e0;
+  opacity: 1; Firefox
+}
+
+input[type=email] {
+	background: transparent; border-top : transparent ;
+	border-left : transparent ;
+	border-right : transparent;
+	border-bottom: 1px solid ;
+	padding-left : 0;
+	outline: none;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom : 1px solid white;
+	padding-left: 0;
+	font-size: 24px;
+	width:100px;/* 150 */
+	color: white;
+}
+
+}
 
 
 
