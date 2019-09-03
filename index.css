@@ -255,24 +255,24 @@ body{
 }
 
 #story{
-	/* padding-right: 0px!important; */
+	
 	text-align: justify;
 	
 	/* Remove Space */
 	text-justify: distribute;
-	word-spacing:-2px;
+	 /* word-spacing:-2px;  */
 	text-align-last: left;
 }
 
 	.signup
 	{
 	 font-size:20px;
-	 line-height: 1.0em;
+	 /* line-height: 1.0em; */
     
      height: 170px !important;
-     padding-left: 31%!important;
-     padding-right: 32%!important;
-     background-color:rgba(0,0,0,0.5)!important;
+    /*  padding-left: 28%!important; 
+     padding-right:29%!important; */
+    width:430px!important;
 	}
 
 
