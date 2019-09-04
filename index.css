@@ -254,25 +254,29 @@ body{
 	padding-right: 25px!important;
 }
 
-#story{
+#story {
+		text-align: justify;
 	
-	text-align: justify;
-	
-	/* Remove Space */
-	text-justify: distribute;
-	 /* word-spacing:-2px;  */
-	text-align-last: left;
-}
-
-	.signup
+		/* Remove Space */
+		text-justify: distribute;
+		text-align-last: left;
+		/* word-spacing:-2px;  */
+	}
+	#forSignUp
 	{
-	 font-size:20px;
-	 /* line-height: 1.0em; */
-    
-     height: 170px !important;
-    /*  padding-left: 28%!important; 
+	background: url("img/MainBG.jpg");
+	background-repeat: no-repeat;
+	}
+	.signup {
+		font-size: 20px;
+		/* line-height: 1.0em; */
+		height: 120px !important;
+		margin-left: 130px;
+		/*  padding-left: 28%!important; 
      padding-right:29%!important; */
-     /* width:430px!important;*/
+		/* width:100vw!important; */
+		
+		
 	}
 
 
