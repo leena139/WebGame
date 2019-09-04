@@ -271,7 +271,7 @@ body{
 		font-size: 20px;
 		/* line-height: 1.0em; */
 		height: 120px !important;
-		margin-left: 130px;
+			margin: 0 auto;
 		/*  padding-left: 28%!important; 
      padding-right:29%!important; */
 		/* width:100vw!important; */
