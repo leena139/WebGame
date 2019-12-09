@@ -431,7 +431,7 @@ p{
     position: absolute;
     right: 100%;
     top: 0;
-    background: black;
+    /* background: black; */
     color:#fff;
     width: 70px;
     height: 100%;
