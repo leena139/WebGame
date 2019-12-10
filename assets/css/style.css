@@ -426,7 +426,7 @@ p{
 .yellow-bg{
 
 /* background-image: url(../images/bg8.jpg); */
-     background-color: #6C3483; 
+     background-color: #6C3483;
     padding: 50px 0;
 }
 .about-des-pannel-outer:after{
@@ -610,7 +610,7 @@ p{
     width: 100%;
 }
 .contact-icon {
-    color:green;
+    color:black;
     font-size: 40px;
 }
 .contact-text {
@@ -623,7 +623,7 @@ p{
 }
 .contact-link:hover,.contact-link:focus,.contact-link:active {
     text-decoration: none;
-    color: #6C3483 ;
+    color: white;
 }
 .contact-us-form-outer {
     width: 100%;
