@@ -425,8 +425,8 @@ p{
 /*About Style Start Here*/
 .yellow-bg{
 
-/* background-image: url(../images/bg8.jpg); */
-     background-color: #6C3483;
+
+     /* background-color: #6C3483; */
     padding: 50px 0;
 }
 .about-des-pannel-outer:after{
@@ -435,6 +435,7 @@ p{
     position: absolute;
     right: 100%;
     top: 0;
+    background-image: url(../images/bubble.jpg);
     /* background: black; */
     color:#fff;
     width: 70px;
@@ -453,6 +454,7 @@ p{
 }
 .about-des-pannel-outer {
     padding: 50px 30px;
+
     background-color: #fff;
     position: relative;
     min-height: 312px;
@@ -504,6 +506,7 @@ p{
     transform: rotate(360deg);
     transition: .5s all ease;
     color: #6C3483  ;
+      background-image: url(../images/bubble.jpg); 
 }
 .service-des-pannel-outer:hover .service-heading{
     color: #010101;
