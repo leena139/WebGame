@@ -425,8 +425,8 @@ p{
 /*About Style Start Here*/
 .yellow-bg{
 
-
-     /* background-color: #6C3483; */
+/* background-image: url(../images/bg10.jpg); */
+   background-color:white; 
     padding: 50px 0;
 }
 .about-des-pannel-outer:after{
@@ -435,9 +435,9 @@ p{
     position: absolute;
     right: 100%;
     top: 0;
-    background-image: url(../images/bubble.jpg);
-    /* background: black; */
-    color:#fff;
+    /* background-image: url(../images/bubble.jpg); */
+   /* background: black; */
+    color:white;
     width: 70px;
     height: 100%;
 }
@@ -448,14 +448,14 @@ p{
     left: 100%;
     top: 0;
     z-index: 2;
-    background: #fff;
+    background: black;
     width: 70px;
     height: 100%;
 }
 .about-des-pannel-outer {
     padding: 50px 30px;
 
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
     min-height: 312px;
 }
@@ -506,7 +506,7 @@ p{
     transform: rotate(360deg);
     transition: .5s all ease;
     color: #6C3483  ;
-      background-image: url(../images/bubble.jpg); 
+      background-image: url(../images/bubble.jpg);
 }
 .service-des-pannel-outer:hover .service-heading{
     color: #010101;
