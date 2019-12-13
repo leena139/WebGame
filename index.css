@@ -287,8 +287,6 @@ input{
     transition: all .7s 1s ease;}
 }
 textarea{
-
-
   top :0;
   opacity: 1;
   max-height: 100px;
@@ -306,8 +304,79 @@ h1{
   }
 
 
-  .ball {
+  /* .ball {
   position: absolute;
   border-radius: 100%;
   opacity: 0.7;
+} */
+
+
+/*Trigger Button*/
+.login-trigger {
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  padding: 15px 30px;
+  border-radius: 30px;
+  position: relative;
+  top: 50%;
+  border: 2px solid  white;
+  text-decoration: none;
+}
+.login-trigger:hover{
+    background-color:  #FFA500;
+    text-decoration: none;
+    color:black
+}
+/*Modal*/
+h4 {
+  font-weight: bold;
+  color: #fff;
+}
+.close {
+  color: #fff;
+  transform: scale(1.2)
+}
+.modal-content {
+  font-weight: bold;
+  background: transparent;
+}
+.form-control {
+  margin: 1em 0;
+}
+.form-control:hover, .form-control:focus {
+  box-shadow: none;
+  border-color: #fff;
+}
+.username, .password {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  font-weight: normal;
+  background: transparent;
+}
+.form-control::-webkit-input-placeholder {
+  color: #eee;
+}
+.form-control:focus::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+.login {
+  padding: 6px 20px;
+  border-radius: 20px;
+  background-color:transparent;
+  border: 2px solid white;
+  color: #FAB87F;
+  font-weight: bold;
+  transition: all .5s;
+  margin-top: 1em;
+  text-decoration: none!important;
+}
+.login:hover {
+  background: #FAB87F;
+  color: black;
+  text-decoration: none;
 }

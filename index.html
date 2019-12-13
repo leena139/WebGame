@@ -3,6 +3,8 @@
     <head>
         <title>Flopoverse</title>
         <meta charset="UTF-8">
+
+<script src="assets/js/index.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Styles Included-->
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
@@ -16,10 +18,17 @@
         <!--Css Links-->
   <link rel="stylesheet" type="text/css" href="index.css">
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript">
 
+  </script>
 
     </head>
+
     <body>
+
+      <div id="back"></div>
+      <div id="front"></div>
 
         <div class="wrapper">
             <div class="container-fluid">
@@ -64,6 +73,12 @@
                     <section  id="home">
                         <div class="banner-sec-outer">
                             <div class="banner-tittles">
+
+
+
+
+
+
                                 <!-- <div class="banner-medium-heading-outer">
                                     <h3 class="banner-medium-heading">Welcome To Our</h3>
                                 </div> -->
@@ -73,10 +88,28 @@
                                 <div class="banner-des-outer">
                                     <p class="banner-des-text">"Flopoverse is a Crypto&#8208collectibles gaming platform."</p>
                                 </div>
-                                <div class="banner-btn-outer">
-                                    <a class="blue-btn" href="#signup">Sign up</a>
-                                </div>
+                                <!-- <div class="banner-btn-outer">
+                                    <a class="blue-btn " href="#signup">Sign up</a>
+                                </div> -->
+<br>
+                                <!--Trigger-->
+                                <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Sign Up</a>
 
+                                <div id="login" class="modal fade" role="dialog">
+                                  <div class="modal-dialog">
+
+                                    <div class="modal-content">
+                                      <div class="modal-body">
+                                        <button data-dismiss="modal" class="close">&times;</button>
+                                        <h4>Signup For Early Access</h4>
+                                        <form>
+                                          <input type="email" name="username" class="username form-control" placeholder="Email Id"/>
+                                          <!-- <input type="tel" name="tel" class="password form-control" placeholder="Phone"/> -->
+                                          <input class="btn login" type="submit" value="Signup" />
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
 
                                 <!-- <div class="bottom-arrow">
                                     <a href="#signup">
@@ -96,6 +129,9 @@
                     <section id="signup">
                         <div class="description-sec-outer">
                             <div class="container">
+
+
+
                                 <div>
                                   <!-- class="description-pannel" -->
                                   <div >
@@ -122,9 +158,7 @@
 
 
 
-
-
-                           <!-- For tooltip  button-->
+                         For tooltip  button
                            <script>
                             $(document).ready(function(){
                             $('[data-toggle="tooltip"]').tooltip();
@@ -133,10 +167,11 @@
 
                           </form>
                            </div>
-                      </div> -->
+                      </div>  -->
 
                     </div>
                   </div>
+
                                 </div>
 
                             </div>
@@ -153,7 +188,13 @@
 
                     <!--About Section Start Here-->
                     <section id="story">
-                      <script type="text/javascript">
+
+
+
+
+
+
+                      <!-- <script type="text/javascript">
 
                                       // Some random colors
                                       const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
@@ -196,7 +237,7 @@
                                           }
                                         );
                                       });
-                      </script>
+                      </script> -->
                         <div class="about-sec-outer yellow-bg">
                             <div class="container">
                                 <div class="bordered-heading-outer">
@@ -255,24 +296,28 @@ The Flopos have slowly evolved over the past 200 years and have started walking 
                                 <div class="clearfix"></div>
                                 <div class="row">
                                     <div class="col-md-12  ">
+
                                         <!--  <div class="about-des-main">
                                             <div class="about-left-pannel about-des-pannel-outer">
                                                <div class="bordered-heading-outer">
                                                     <h2 class="bordered-heading">Contact Us At</h2>
                                                 </div> -->
+
+
                                                 <div class="contact-us-pannel-outer grid-colum-align">
                                                     <div class="contact-pannel">
                                                         <div class="contact-icon">
-                                                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                                            <!-- <i class="fa fa-location-arrow" aria-hidden="true"></i> -->
                                                         </div>
+
                                                         <div class="contact-des-pannel">
-                                                            <p class="contact-text">
-        <a href="https://discord.gg/MxgnpU" class="z" target="_blank">Join us on Discord now <img class="imglogo" src="img/Discord-Logo-Color .svg" ></a> </p>
+                                                            <p class="contact-text ">
+        <a href="https://discord.gg/MxgnpU" class="z contact-link" target="_blank">Join us on Discord now <img class="imglogo" src="img/Discord-Logo-Color .svg" ></a> </p>
                                                         </div>
                                                     </div>
                                                     <div class="contact-pannel">
                                                         <div class="contact-icon">
-                                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
                                                         </div>
                                                         <div class="contact-des-pannel">
                                                             <div>
@@ -302,13 +347,15 @@ The Flopos have slowly evolved over the past 200 years and have started walking 
                                 <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
                             </ul> -->
                             <div class="copyright-text">
-                                <p>Designed & Developed By <a target="_blank" href="#">M2 Labs</a></p>
+                                <p>Designed & Developed By M2 Labs</p>
                             </div>
                         </div>
                     </footer>
                     <!--Footer End Here-->
                 </div>
             </div>
+        </div>
+      </div>
         </div>
         <!-- <div class="loader">
 			<div class="loader-inner">
@@ -530,7 +577,7 @@ The Flopos have slowly evolved over the past 200 years and have started walking 
         </script>
 
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         $(document).ready(function () {
             var basicTimeline = anime.timeline(),
                 doneTimeline = anime.timeline();
@@ -608,7 +655,7 @@ The Flopos have slowly evolved over the past 200 years and have started walking 
             });
 
         });
-                </script>
+                </script> -->
 
 
 
