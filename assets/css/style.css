@@ -154,7 +154,7 @@ p{
 }
 .navbar-inverse .navbar-nav>li>a {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 0;
 }
 .navbar-inverse .navbar-nav>li {
@@ -420,15 +420,7 @@ color: white ;
 
 }
 @media screen and (max-width: 767px) and (min-width: 320px) {
- /* .header-main
-{
-  position: relative;
-}
-.logo-outer
-{
- position: fixed;
-} */
-    .about-left-pannel:after {
+ .about-left-pannel:after {
         position: relative;
     }
     .no-padding {
@@ -495,15 +487,15 @@ color: white ;
     .navbar-toggle {
         border-radius: 0;
     }
-  .navigation-bar-outer {
-        margin-top: -10px;
-    }  /*
-    .navbar-nav {
-        float: none;
-    } */
-    .navbar-inverse .navbar-nav>li {
-        padding: 4px 12px;
+ .navigation-bar-outer  {
+        /* margin-top: -22px; */
     }
+    .navbar-nav {
+        float:none;
+    }
+    /* .navbar-inverse .navbar-nav>li {
+        padding: 4px 12px;
+    } */
 
 }
 
