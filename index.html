@@ -22,19 +22,22 @@
 <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
     </head>
 
     <body>
 
 
-<div class="wrapper">
+<div class="wrapper waveWrapper waveAnimation">
 
-       <video autoplay muted loop id="myVideo" >
+ <video autoplay muted loop id="myVideo" >
               <source src="video\Plexus.mp4" type="video/mp4">
-        </video>
+        </video> 
 
-            <div class="container-fluid">
-                <div class="row">
+            <div class="container-fluid waveWrapperInner bgTop" >
+                <div class="row wave waveTop">
                     <!--Header Starts Here-->
                     <header>
                         <div class="header-main fixed">
@@ -43,7 +46,7 @@
 
                                     <div class="col-md-3 col-sm-3 col-xs-12">
                                         <div class="logo-outer">
-                                            <a class="logo-style " "href="index.html">FLOPOVERSE</a>
+                                            <a class="logo-style " href="index.html">FLOPOVERSE</a>
                                         </div>
 </div>
 
@@ -84,25 +87,48 @@
                                     <h3 class="banner-medium-heading">Welcome To Our</h3>
                                 </div> -->
                                 <div class="banner-lined-heading-outer">
-                                    <h2 class="banner-lined-heading">Flopoverse</h2>
+                                    <h2 class="banner-lined-heading ml2">Flopoverse</h2>
                                 </div>
                                 <div class="banner-des-outer">
                                     <p class="banner-des-text">"Flopoverse is a Crypto&#8208collectibles gaming platform."</p>
                                 </div>
-                             <div class="banner-btn-outer ">
+                                <script>
+                                  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-                                      <form class="grop-from " id="signup">
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+                                </script>
+                             <div class="banner-btn-outer" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')">
+
+                                      <form class="grop-from " id="signup"  >
                                       <div class="form-head">
                                       <span class="text">
                                       </span><i class="icon-placeholder"></i></div>
                                       <div class="form-body">
                                       <span class="error-text">Please Fill Out This Field</span>
-                                      <div class="form-controls"><input id="control-name" placeholder="Name" />
+                                      <div class="form-controls">
+                                      <input id="control-name" placeholder="Name" />
                                       <input id="control-phone" placeholder="Phone No" />
-                                      <input id="control-email" placeholder="Email" />
+                                      <input id="control-email" placeholder="Email"  name="emailadd"/>
                                       </div>
                                       </div>
-                                      <a class="form-action"><i class="icon-action"></i></a>
+                                      <a class="form-action" ><i class="icon-action"></i></a>
                                       </form>
 </div>
                                       <script type="text/javascript">
@@ -139,6 +165,7 @@
                                       break;
                                       case "success":
                                       form_id = "signup";
+                                      sendToSheet();
                                       break;
                                       }
                                       $('.icon-action').addClass('back');
@@ -188,7 +215,56 @@
 
 
                                       })
-                                        </script>
+  </script>
+
+  <!-- Send email Add to google sheet -->
+
+    <!-- <script type="text/javascript">
+    function sendToSheet()
+    {
+    var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbzG4_TF9VxJi35AWbO53z9aYqAXHGEokjMkTK6emoZDVK1cnKPh/exec'
+
+    // $('#submit-form').on('click', function(e) {
+    //  alert("Inside SendToSheet2()");
+
+    var jqxhr =$.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+    }).done(function(resp){
+    console.log("success",resp)
+  })
+    }
+    </script> -->
+
+  <!-- Email Validation -->
+  <!-- <script type="text/javascript">
+  function ValidateEmail(emailval)
+  { // this.preventDefault();
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(emailval.value.trim().match(mailformat))
+  {
+  document.sign.emailadd.focus();
+  // sendEmail(emailval.value.trim());
+  //For send enter email to perticular address(email)
+ alert("Thank you. You have been signed up for early access.");
+  // LoadModalDiv();
+  sendToSheet();
+  // alert("inside ValidateEmail--send() function");
+  document.sign.emailadd.value="";
+  return true;
+  }
+  else
+  {
+    // LoadModalDiv1();
+   alert("Please Enter Valid Email..");
+  document.sign.emailadd.focus();
+  return false;
+  }
+  }
+  </script> -->
 
 
 
