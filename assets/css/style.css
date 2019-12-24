@@ -141,7 +141,6 @@ p{
 .header-main.fixed{
     padding: 0;
     transition: all.3s ease-in;
-
 }
 /*Fixed Header End Here*/
 
@@ -348,7 +347,7 @@ color: white ;
 .call-back-input {
     border-radius: 0;
     min-height: 50px;
-    border: 1px solid #6C3483 ;
+    border: 2px solid orange;
     color: #010101;
 }
 .call-back-input::placeholder {
@@ -366,14 +365,16 @@ color: white ;
 }
 .contact-btn{
     border-radius: 0;
+      font-weight: bold;
 }
 .contact-btn:hover, .contact-btn:focus, .contact-btn:active{
     background-color:orange  !important;
+
 }
 .contact-bar-outer p{
     margin: 0;
 }
-/*Contact US Style End Here*/
+/*Contact US Style End Here*/ */
 
 /*Footer Style Start Here*/
 
@@ -383,6 +384,7 @@ color: white ;
 }
 .copyright-text {
     margin-top: 5px;
+    text-align: center;
 }
 .copyright-text p {
     margin: 0;
