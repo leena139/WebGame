@@ -1,7 +1,3 @@
-/*
-    Created on : Jun 16, 2018
-    Author     : Mohit Sarangal
-*/
 
 @import "bootstrap.min.css";
 @import "font-awesome.min.css";
@@ -348,24 +344,27 @@ color: white ;
     border-radius: 20px;
     min-height: 50px;
     border: 2px  solid orange;
-    color: #010101;
+  background-color: black !important;
+    color: white;
 }
 .call-back-input::placeholder {
-    color: #010101;
+    color: white!important;
     opacity: 1;
 }
+
 .mg-textarea {
     min-height: 150px;
     resize: vertical;
 }
 .call-back-input:focus {
-    border-color: #010101;
+    border-color: white;
     outline: 0;
     box-shadow: none;
 }
 .contact-btn{
-    border-radius: 0;
-      font-weight: bold;
+    border-radius: 50px;
+    font-weight: bold;
+    width:200px;
 }
 .contact-btn:hover, .contact-btn:focus, .contact-btn:active{
     background-color:orange  !important;
