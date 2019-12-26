@@ -166,6 +166,7 @@ p{
 }
 .navbar-nav {
     float: right;
+    text-transform: uppercase;
 }
 
 .link-1 {

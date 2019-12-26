@@ -33,7 +33,7 @@
 <div class="wrapper waveWrapper waveAnimation">
 
  <video autoplay muted loop id="myVideo" >
-              <source src="video\Plexus.mp4" type="video/mp4">
+              <source src="video\Abstract.mp4" type="video/mp4">
         </video>
 
             <div class="container-fluid waveWrapperInner bgTop" >
@@ -64,11 +64,17 @@
                                                         <span class="icon-bar"></span>
                                                     </button>
                                                 </div>
-                                                 <div class="collapse navbar-collapse" id="myNavbar">
+                                                 <div class="collapse navbar-collapse " id="myNavbar">
                                                     <ul class="nav navbar-nav ">
-                                                        <li><a href="#story" class="link-1">Story</a></li>
-                                                        <li><a href="index.html" class="link-1">Signup</a></li>
-                                                        <li><a href="contact.html" class="link-1">Contact</a></li>
+                                                        <li >
+
+                                                          <a href="#story" class="link-1">Story</a></li>
+                                                        <li >
+
+                                                          <a href="index.html" class="link-1">Signup</a></li>
+                                                        <li >
+
+                                                          <a href="contact.html" class="link-1">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -79,6 +85,41 @@
                         </div>
                     </header>
                     <!--Header Ends Here-->
+
+                    <script>
+                    var $menu = $('.Menu-list'),
+                        $item = $('.Menu-list-item'),
+                        w = $(window).width(), //window width
+                        h = $(window).height(); //window height
+
+                    $(window).on('mousemove', function(e) {
+                      var offsetX = 0.5 - e.pageX / w, //cursor position X
+                          offsetY = 0.5 - e.pageY / h, //cursor position Y
+                          dy = e.pageY - h / 2, //@h/2 = center of poster
+                          dx = e.pageX - w / 2, //@w/2 = center of poster
+                          theta = Math.atan2(dy, dx), //angle between cursor and center of poster in RAD
+                          angle = theta * 180 / Math.PI - 90, //convert rad in degrees
+                          offsetPoster = $menu.data('offset'),
+                          transformPoster = 'translate3d(0, ' + -offsetX * offsetPoster + 'px, 0) rotateX(' + (-offsetY * offsetPoster) + 'deg) rotateY(' + (offsetX * (offsetPoster * 2)) + 'deg)'; //poster transform
+
+                      //get angle between 0-360
+                      if (angle < 0) {
+                        angle = angle + 360;
+                      }
+
+                      //poster transform
+                      $menu.css('transform', transformPoster);
+
+                      //parallax for each layer
+                      $item.each(function() {
+                        var $this = $(this),
+                            offsetLayer = $this.data('offset') || 0,
+                            transformLayer = 'translate3d(' + offsetX * offsetLayer + 'px, ' + offsetY * offsetLayer + 'px, 20px)';
+
+                        $this.css('transform', transformLayer);
+                      });
+                    });
+                    </script>
 
                     <!--Contact Us Section Start Here-->
                     <section id="contact">
@@ -105,8 +146,8 @@
                                             <div class="form-group col-md-12 col-sm-12">
                                                 <textarea class="call-back-input mg-textarea form-control" placeholder="Message"></textarea>
                                             </div>
-                                            <div class="col-md-12 col-sm-12 button-8">
-                                                <button class="contact-btn btn btn-preventDefault  btn-success" type="submit">Send Message</button>
+                                            <div class="col-md-12 col-sm-12 button-8 container">
+                                                <button class=" myButt two" type="submit">Send Message</button>
                                             </div>
                                         </form>
                                     </div>
@@ -116,9 +157,9 @@
                                     <div class="col-md-6 col-sm-6 ">
                                         <div class="about-des-main">
 
-                                                <div class="bordered-heading-outer">
+                                                <!-- <div class="bordered-heading-outer">
                                                     <h2 class="bordered-heading">Contact Us At</h2>
-                                                </div>
+                                                </div> -->
                                                 <div class="contact-us-pannel-outer grid-colum-align">
                                                     <div class="contact-pannel">
 
