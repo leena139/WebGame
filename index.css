@@ -627,7 +627,8 @@ font-size: 24px;
   font-size: 20px;
   background-color: transparent;
   position: relative;
-  border: 2px solid #fff;
+  border: 2px solid orange;
+  border-radius: 20px;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -639,9 +640,11 @@ font-size: 24px;
   color: #fff;
 }
 .two:hover {
-  border-color: black;
-  color: #black;
-  background-color: orange;
+  border: 2px solid white;
+  color:orange;
+    font-size: 25px;
+  background-color: ;
+  font-weight: bold;
   animation: shakeThatBooty 0.3s linear 1;
   -webkit-animation: shakeThatBooty 0.3s linear 1;
   -moz-animation: shakeThatBooty 0.3s linear 1;
