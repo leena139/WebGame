@@ -337,7 +337,7 @@ color: white ;
 .contact-us-form-outer {
     width: 100%;
     float: left;
-    background: #fff;
+    /* background: #fff; */
     padding: 30px;
     margin-bottom: 50px;
 }
@@ -345,7 +345,7 @@ color: white ;
     border-radius: 20px;
     min-height: 50px;
     border: 2px  solid orange;
-  background-color: black !important;
+  background-color:transparent !important;
     color: white;
 }
 .call-back-input::placeholder {
